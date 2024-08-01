@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Social links profile</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      :root {
+        --page-color: #141414;
+        --card-color: #1f1f1f;
+        --location-color: #d2f073;
+        --button-color: #333333;
+      }
+
+      @font-face {
+        font-family: inter;
+        src: url("./assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+      }
+
+      body {
+        min-height: 100vh;
+        margin: auto;
+        font-family: inter;
+        color: white;
+      }
+      .container {
+        background-color: var(--page-color);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .card {
+        
+        background-color: var(--card-color);
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+      }
+
+      .profile img {
+        width: 7rem;
+        border-radius: 50%;
+      }
+
+      .name {
+        font-weight: 450;
+        margin-bottom: 0;
+      }
+
+      .location {
+        color: var(--location-color);
+        font-weight: 500;
+        margin-top: 0.5rem;
+      }
+
+      .description {
+        font-size: medium;
+        font-weight: 300;
+        margin: 2rem;
+      }
+
+      .social {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+      }
+
+      button {
+        padding: 0;
+        border: none;
+        background-color: var(--button-color);
+        color: white;
+        font-size: large;
+        font-weight: 600;
+        padding: 1.2rem;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        color: var(--page-color);
+        background-color: var(--location-color);
+      }
+
+      @media screen and (min-width: 480px) {
+        .card {
+          padding: 3rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="profile">
+          <img src="./assets/images/avatar-jessica.jpeg" alt="" />
+          <h1 class="name">Jessica Randall</h1>
+          <h3 class="location">London, United Kigdom</h3>
+          <h3 class="description">"Front-end developer and avid reader."</h3>
+        </div>
+        <div class="social">
+          <button>Github</button>
+          <button>Frontend Mentor</button>
+          <button>LinkedIn</button>
+          <button>Twitter</button>
+          <button>Instragram</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
